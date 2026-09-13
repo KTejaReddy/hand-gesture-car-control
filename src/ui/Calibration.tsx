@@ -8,7 +8,7 @@ export const Calibration: React.FC = () => {
   const [minX, setMinX] = useState(0.5);
   const [maxX, setMaxX] = useState(0.5);
 
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number>(0);
 
   useEffect(() => {
     if (gameState !== GameState.CALIBRATION) return;
